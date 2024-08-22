@@ -5,6 +5,7 @@ import configparser
 from datetime import date
 import time
 
+
 config = configparser.ConfigParser()
 config.read(r"C:\Users\adria\Downloads\work\config.ini", encoding="UTF-8")
 user = config.get("Settings", "user")
