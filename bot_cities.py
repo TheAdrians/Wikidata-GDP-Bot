@@ -42,7 +42,7 @@ WHERE
   FILTER NOT EXISTS {?object wdt:P576 ?diss}.
 
   SERVICE wikibase:label {bd:serviceParam wikibase:language "[AUTO_LANGUAGE],lv,en"}
-  }
+}
 """
 sparql = SPARQLWrapper("https://query.wikidata.org/sparql", agent=user)
 sparql.setQuery(query)
